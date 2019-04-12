@@ -46,6 +46,7 @@ public class EnemyController : AliveObject
         if (hp > 0)
         {
             aliveLogic();
+            passiveSkills();
         }
         else if (hp <= 0)
         {

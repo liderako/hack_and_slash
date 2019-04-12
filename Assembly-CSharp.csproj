@@ -54,6 +54,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HealingBafSkill.cs" />
+    <Compile Include="Assets\HealingHeavy.cs" />
+    <Compile Include="Assets\PassiveSkill.cs" />
+    <Compile Include="Assets\RegenerationHp.cs" />
     <Compile Include="Assets\Scripts\GizmoScripts\MouseClickPoint.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\AliveObject.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemyCheckPointUp.cs" />
@@ -64,6 +68,8 @@
     <Compile Include="Assets\Scripts\PlayableGameObject\Rotate.cs" />
     <Compile Include="Assets\Scripts\UI\GamaManager.cs" />
     <Compile Include="Assets\Scripts\UI\MouseTarget.cs" />
+    <Compile Include="Assets\Scripts\UI\SkillManager.cs" />
+    <Compile Include="Assets\Skill.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

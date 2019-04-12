@@ -6,6 +6,10 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="HealingBafSkill.cs" t="Include" />
+        <e p="HealingHeavy.cs" t="Include" />
+        <e p="PassiveSkill.cs" t="Include" />
+        <e p="RegenerationHp.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="GizmoScripts" t="Include">
             <e p="MouseClickPoint.cs" t="Include" />
@@ -26,8 +30,10 @@
           <e p="UI" t="Include">
             <e p="GamaManager.cs" t="Include" />
             <e p="MouseTarget.cs" t="Include" />
+            <e p="SkillManager.cs" t="Include" />
           </e>
         </e>
+        <e p="Skill.cs" t="Include" />
       </e>
       <e p="hack_and_slash.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

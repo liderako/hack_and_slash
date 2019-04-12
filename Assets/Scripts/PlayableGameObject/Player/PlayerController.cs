@@ -7,8 +7,6 @@ using Random = UnityEngine.Random;
 
 public class PlayerController : AliveObject
 {
-
-
     public bool isRun;
     public bool isEnemy;
     public bool isAttackEnd;
@@ -25,7 +23,7 @@ public class PlayerController : AliveObject
     private NavMeshAgent agent;
     private Animator animator;
     private int amountPointTelent;
- 
+    
     public void Start()
     {
         animator = GetComponent<Animator>();
@@ -41,7 +39,6 @@ public class PlayerController : AliveObject
             {
                 move();
             }
-
             if (Input.GetMouseButtonUp(0) && isEnemy)
             {
                 isAttackEnd = true;
@@ -51,6 +48,7 @@ public class PlayerController : AliveObject
             {
                 attackAnimationStart();
             }
+            passiveSkills();
         }
         if (hp <= 0)
         {
@@ -65,10 +63,11 @@ public class PlayerController : AliveObject
             Vector3 mouse = Input.mousePosition;
             mouse.z = 1000;
             Ray ray = Camera.main.ScreenPointToRay(mouse);
-            //Debug.DrawRay(ray.origin, ray.direction * 10, Color.yellow);
+            Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
+//                Debug.Log(hit.transform.gameObject.name);
                 if (hit.transform.gameObject.layer == 10 && Vector3.Distance(hit.point, transform.position) <= distanceRange)
                 {
                     EnemyController tmp = hit.transform.gameObject.GetComponent<EnemyController>();

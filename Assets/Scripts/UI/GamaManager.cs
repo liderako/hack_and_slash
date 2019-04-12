@@ -45,6 +45,7 @@ public class GamaManager : MonoBehaviour
     // Talent View
     public bool isTalentPanel;
     public bool isStaticPlayer;
+    public Text textAmountTalentPoint;
 
     // buttons
     public GameObject upgradeButton;
@@ -77,6 +78,7 @@ public class GamaManager : MonoBehaviour
         }
         visibleViewGame();
         visibleCharacterPanel();
+        visibleTalentPanel();
         upgradePointEvent();
     }
     
@@ -109,12 +111,13 @@ public class GamaManager : MonoBehaviour
     public void upgradeAgility()
     {
         pc.agility += 1;
+        pc.upgradePoint--;
     }
 
     public void upgradeCON()
     {
         pc.constitution += 1;
-        pc.updateHp();
+        pc.UpdateMaxHp();
         pc.upgradePoint--;
     }
 
@@ -154,6 +157,11 @@ public class GamaManager : MonoBehaviour
             textCredits.text = "Credits: " + pc.credits;
             textAmountPointsTalents.text = "Amount Points Talents: " + pc.getAmountPointTalent();
         }
+    }
+
+    private void visibleTalentPanel()
+    {
+        textAmountTalentPoint.text = "Amount Points Talents: " + pc.getAmountPointTalent();
     }
 
     private void upgradePointEvent()
