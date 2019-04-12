@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D79DF6FD-FCDE-DF48-36C9-BE20037CBCC9}</ProjectGuid>
+    <ProjectGuid>{3DE3059F-37CB-6F0A-858C-6F891FA2C5DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,30 +54,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GamaManager.cs" />
-    <Compile Include="Assets\MouseTarget.cs" />
-    <Compile Include="Assets\Rotate.cs" />
-    <Compile Include="Assets\Scripts\AliveObject.cs" />
-    <Compile Include="Assets\Scripts\EnemyCheckPointUp.cs" />
-    <Compile Include="Assets\Scripts\EnemyController.cs" />
-    <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\GizmoScripts\MouseClickPoint.cs" />
-    <Compile Include="Assets\Scripts\Player\CameraController.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\AliveObject.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemyCheckPointUp.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Player\CameraController.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Rotate.cs" />
+    <Compile Include="Assets\Scripts\UI\GamaManager.cs" />
+    <Compile Include="Assets\Scripts\UI\MouseTarget.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Android.Editor">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/ScriptAssemblies/Unity.Analytics.Android.Editor.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/ScriptAssemblies/Unity.Analytics.Android.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -278,19 +278,19 @@
       <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/PackageCache/com.unity.analytics@3.0.9/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/PackageCache/com.unity.analytics@3.0.9/Android/Unity.Analytics.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/PackageCache/com.unity.analytics@3.0.9/Android/Unity.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>/Volumes/Storage/goinfre/asvirido/day088/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/PackageCache/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

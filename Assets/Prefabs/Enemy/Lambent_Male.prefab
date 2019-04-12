@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 5583366514164102928}
   m_Layer: 10
   m_Name: Lambent_Male
-  m_TagString: Untagged
+  m_TagString: EnemyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -840,13 +840,12 @@ MonoBehaviour:
   isDead: 0
   isExp: 0
   playerObject: {fileID: 0}
-  loot: {fileID: 7571791527010952189, guid: 89471838198cb41049454ebedd0873d1, type: 3}
   playerController: {fileID: 0}
-  capsuleCollider: {fileID: 0}
-  checkPoint: {x: 0, y: 0, z: 0}
+  loot: {fileID: 7571791527010952189, guid: 89471838198cb41049454ebedd0873d1, type: 3}
   _parent: {fileID: 0}
-  checkDeadPoint: {x: 0, y: 0, z: 0}
   _type: Zombi Man
+  _speedDownDead: 0.1
+  _speedUpSpawn: 0.2
 --- !u!135 &1148606659362478263
 SphereCollider:
   m_ObjectHideFlags: 0

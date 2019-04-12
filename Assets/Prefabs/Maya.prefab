@@ -5915,17 +5915,17 @@ MonoBehaviour:
   credits: 0
   isRun: 1
   isEnemy: 0
-  point: {fileID: 0}
-  distanceRange: 0.2
   isAttackEnd: 0
+  point: {fileID: 0}
   upgradePoint: 0
   nextLevelXP: 200
-  _particalSystem: {fileID: 7626619974764976994}
   mouseTarget: {fileID: 0}
   _layerMask:
     serializedVersion: 2
-    m_Bits: 279
+    m_Bits: 1335
   _targetEnemy: {fileID: 0}
+  _particalSystemLevelUp: {fileID: 7626619974764976994}
+  distanceRange: 0.2
 --- !u!1 &7496018042558157985
 GameObject:
   m_ObjectHideFlags: 0
