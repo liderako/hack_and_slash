@@ -13,7 +13,8 @@ public class EnemyController : AliveObject
     [HideInInspector]public bool isExp;
     
     public GameObject playerObject;
-    public PlayerController playerController;
+    public GameObject player;
+	public PlayerController playerController;
     public GameObject loot;
 
     
@@ -34,6 +35,7 @@ public class EnemyController : AliveObject
      */
     void Start()
     {
+		player = GameObject.Find("Maya");
         capsuleCollider = GetComponent<CapsuleCollider>();
         _animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
@@ -47,6 +49,11 @@ public class EnemyController : AliveObject
         {
             aliveLogic();
             passiveSkills();
+			GameObject player = GameObject.Find("Maya");
+			if (Vector3.Distance(transform.position, player.transform.position) < 0.7)
+			{
+				targetOnPlayer(player);
+			}
         }
         else if (hp <= 0)
         {
@@ -54,15 +61,9 @@ public class EnemyController : AliveObject
         }
     }
     
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player" && hp > 0)
-        {
-            targetOnPlayer(other.gameObject);
-        }
-    }
 
-    void OnTriggerStay(Collider other)
+
+    /*void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Player" && hp > 0 && isPlayer && playerController.hp <= 0)
         {
@@ -71,7 +72,7 @@ public class EnemyController : AliveObject
             agent.enabled = false;
             _animator.SetBool("attack", false);
         }
-    }
+    }*/
 
     /*
      * Public action
