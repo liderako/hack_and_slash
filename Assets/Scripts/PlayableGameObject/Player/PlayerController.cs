@@ -35,6 +35,7 @@ public class PlayerController : AliveObject
     {
         if (hp > 0)
         {
+			animator.SetFloat("Speed", agent.velocity.magnitude);
             if (!GamaManager.gm.isStaticPlayer)
             {
                 move();
@@ -87,7 +88,6 @@ public class PlayerController : AliveObject
                 }
             }
         }
-		animator.SetFloat("Speed", agent.velocity.magnitude);
 
     }
 
