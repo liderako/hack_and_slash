@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!4 &6133653976500523460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4950018265548949525, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
+  m_PrefabInstance: {fileID: 1274204962515343825}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6133653976500523463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4950018265548949526, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
+  m_PrefabInstance: {fileID: 1274204962515343825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98cbb224875447059479e8e2f2f5474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5995943554059406225
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +874,7 @@ SphereCollider:
   m_GameObject: {fileID: 5995943554662444038}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
@@ -2863,22 +2879,6 @@ Transform:
   m_Father: {fileID: 5995943554486586658}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &6133653976500523460 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4950018265548949525, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
-  m_PrefabInstance: {fileID: 1274204962515343825}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6133653976500523463 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4950018265548949526, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
-  m_PrefabInstance: {fileID: 1274204962515343825}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98cbb224875447059479e8e2f2f5474, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1274204962515343825
 PrefabInstance:
   m_ObjectHideFlags: 0
