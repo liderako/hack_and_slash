@@ -136,6 +136,11 @@ public class PlayerController : AliveObject
     {
         return amountPointTelent;
     }
+
+    public void increasePointTalent()
+    {
+        amountPointTelent--;
+    }
     
     /*
     * For animation event

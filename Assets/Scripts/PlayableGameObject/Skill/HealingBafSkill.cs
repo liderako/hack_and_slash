@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class HealingBafSkill : Skill
 {
-    public int   levelSkill;
     public float coolDownTime;
     public float timing;
     public float powerRegen;
     private float oldTimeActivate;
     private float oneSecond;
     private float timeToEnd;
-    [SerializeField]private bool isActive;
     [SerializeField]private bool isHealing;
     [SerializeField] private ParticleSystem _ps;
     private AliveObject _alive;
@@ -20,7 +18,19 @@ public class HealingBafSkill : Skill
     {
         isActive = true;
     }
-    
+
+    public void levelUpSkill()
+    {
+        if (levelSkill < maxLvlSkill)
+        {
+            levelSkill += 1;
+            coolDownTime = coolDownTime - (coolDownTime * 0.10f);
+            GamaManager.gm.upgradeSkillDone();
+
+        }
+    }
+
+
     public void Update()
     {
         if (!isActive && Time.time - oldTimeActivate > coolDownTime)

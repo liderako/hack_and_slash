@@ -54,7 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DropSkill.cs" />
+    <Compile Include="Assets\Info.cs" />
     <Compile Include="Assets\Scripts\GizmoScripts\MouseClickPoint.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\AliveObject.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemyCheckPointUp.cs" />
@@ -69,10 +69,12 @@
     <Compile Include="Assets\Scripts\PlayableGameObject\Skill\RegenerationHp.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Skill\RotateAttack.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Skill\Skill.cs" />
+    <Compile Include="Assets\Scripts\UI\ActiveSkill.cs" />
     <Compile Include="Assets\Scripts\UI\DragSkill.cs" />
     <Compile Include="Assets\Scripts\UI\GamaManager.cs" />
     <Compile Include="Assets\Scripts\UI\MouseTarget.cs" />
     <Compile Include="Assets\Scripts\UI\SkillManager.cs" />
+    <Compile Include="Assets\Scripts\UI\UpgradeEnable.cs" />
     <None Include="Assets\Prefabs\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

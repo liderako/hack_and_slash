@@ -1,5 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!4 &4465903214384841148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: a89abc0d2591545288f4c041059ae633, type: 3}
+  m_PrefabInstance: {fileID: 4465903214384454456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4465903214398997754 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 19800002, guid: a89abc0d2591545288f4c041059ae633, type: 3}
+  m_PrefabInstance: {fileID: 4465903214384454456}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1462732882541337953
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,21 +54,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aeae06aa1fcc47e7b07c6788aef6bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelSkill: 1
+  levelSkill: 0
+  maxLvlSkill: 5
   coolDownTime: 15
   powerRegen: 0.1
   isActive: 0
   _ps: {fileID: 4465903214398997754}
---- !u!4 &4465903214384841148 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400004, guid: a89abc0d2591545288f4c041059ae633, type: 3}
-  m_PrefabInstance: {fileID: 4465903214384454456}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &4465903214398997754 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 19800002, guid: a89abc0d2591545288f4c041059ae633, type: 3}
-  m_PrefabInstance: {fileID: 4465903214384454456}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4465903214384454456
 PrefabInstance:
   m_ObjectHideFlags: 0

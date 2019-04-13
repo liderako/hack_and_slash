@@ -5,23 +5,23 @@ using UnityEngine;
 
 public class RotateAttack : Skill
 {
-    public int levelSkill;
     public float coolDownTime;
     public float damage;
-    
-    [SerializeField]private bool isActive;
     private bool isRotate;
     private float oldTimeActivate;
     private int count;
-    [SerializeField] private ParticleSystem _ps;
     
     private AliveObject _aliveObject;
     
     public void levelUpSkill()
     {
-        levelSkill += 1;
-        damage = damage + (damage * 0.1f);
-        coolDownTime = coolDownTime - (coolDownTime * 0.05f);
+        if (levelSkill < maxLvlSkill)
+        {
+            levelSkill += 1;
+            damage = damage + (damage * 0.1f);
+            coolDownTime = coolDownTime - (coolDownTime * 0.05f);
+            GamaManager.gm.upgradeSkillDone();
+        }
     }
 
     public void Update()
@@ -53,7 +53,6 @@ public class RotateAttack : Skill
             isActive = false;
             isRotate = true;
             oldTimeActivate = Time.time;
-            _ps.Play();
         }
     }
     

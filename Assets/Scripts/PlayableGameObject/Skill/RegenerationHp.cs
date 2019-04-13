@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class RegenerationHp : PassiveSkill
 {
-    public int levelSkill;
     private float oldTime;
     public float coolDownTime;
     public float powerRegen;
 
     public void levelUpSkill()
     {
-        levelSkill += 1;
-        coolDownTime = coolDownTime - (coolDownTime * 0.10f);
+        if (levelSkill < maxLvlSkill)
+        {
+            levelSkill += 1;
+            coolDownTime = coolDownTime - (coolDownTime * 0.10f);
+            GamaManager.gm.upgradeSkillDone();
+        }
     }
     
     public override void action(GameObject gameObject)

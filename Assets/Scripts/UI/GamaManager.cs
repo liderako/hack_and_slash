@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Internal.Experimental.UIElements;
 using UnityEngine.UI;
@@ -48,6 +49,7 @@ public class GamaManager : MonoBehaviour
     public Text textAmountTalentPoint;
     public bool isSelectedSkill;
     public DragSkill dragSkill;
+    public List<GameObject> _level;
     
     // buttons
     public GameObject upgradeButton;
@@ -82,10 +84,12 @@ public class GamaManager : MonoBehaviour
         visibleCharacterPanel();
         visibleTalentPanel();
         upgradePointEvent();
+        
         if (SkillManager.sk.isDrop)
         {
             imagesIconSkill[SkillManager.sk.number].GetComponent<Image>().sprite = dragSkill.sprite;
             SkillManager.sk.isDrop = false;
+            isSelectedSkill = false;
         }
     }
     
@@ -126,6 +130,11 @@ public class GamaManager : MonoBehaviour
         pc.constitution += 1;
         pc.UpdateMaxHp();
         pc.upgradePoint--;
+    }
+
+    public void upgradeSkillDone()
+    {
+        pc.increasePointTalent();
     }
 
     private void visibleViewGame()
@@ -169,6 +178,16 @@ public class GamaManager : MonoBehaviour
     private void visibleTalentPanel()
     {
         textAmountTalentPoint.text = "Amount Points Talents: " + pc.getAmountPointTalent();
+        int count = 0;
+        for (int i = 0; i < _level.Count; i++)
+        {
+            _level[i].SetActive(true);
+            if (count + 6 > pc.level)
+            {
+                break;
+            }
+            count += 6;
+        }
     }
 
     private void upgradePointEvent()

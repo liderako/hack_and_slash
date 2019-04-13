@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class HealingHeavy : Skill
 {
-    public int levelSkill;
     public float coolDownTime;
     public float powerRegen;
-    
-    [SerializeField]private bool isActive;
     private float oldTimeActivate;
     [SerializeField] private ParticleSystem _ps;
     
     public void levelUpSkill()
     {
-        levelSkill += 1;
-        powerRegen = powerRegen + (powerRegen * 0.075f);
-        coolDownTime = coolDownTime - (coolDownTime * 0.05f);
+        if (levelSkill < maxLvlSkill)
+        {
+            levelSkill += 1;
+            powerRegen = powerRegen + (powerRegen * 0.50f);
+            coolDownTime = coolDownTime - (coolDownTime * 0.1f);
+            GamaManager.gm.upgradeSkillDone();
+        }
     }
 
     public void Update()

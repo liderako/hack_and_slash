@@ -43,8 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f98cbb224875447059479e8e2f2f5474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alive: {fileID: 0}
-  levelSkill: 1
-  oldTime: 0
+  levelSkill: 0
+  maxLvlSkill: 5
   coolDownTime: 2.5
   powerRegen: 0.01
