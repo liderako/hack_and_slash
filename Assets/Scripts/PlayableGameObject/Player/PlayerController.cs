@@ -7,10 +7,8 @@ using Random = UnityEngine.Random;
 
 public class PlayerController : AliveObject
 {
-    public bool isRun;
     public bool isEnemy;
     public bool isAttackEnd;
-    public GameObject point;
     public int upgradePoint;
     public float nextLevelXP;
     public MouseTarget mouseTarget;
@@ -94,7 +92,6 @@ public class PlayerController : AliveObject
     public void animationRun(bool status)
     {
         animator.SetBool("Run", status);
-        isRun = status;
     }
 
     public void hit(float damage)
@@ -172,9 +169,11 @@ public class PlayerController : AliveObject
     
     private void _moveOnPosition(Vector3 hit)
     {
-		transform.LookAt(hit);
+        Vector3 difference = hit - transform.position; 
+        difference.Normalize();
+        float rotationY = Mathf.Atan2(difference.z, difference.x) * Mathf.Rad2Deg;
+        agent.transform.rotation = Quaternion.Euler(0f, -rotationY + 90, 0);
         agent.SetDestination(hit);
-        point.transform.position = hit;
     }
 
     public void cheatLevelUp()

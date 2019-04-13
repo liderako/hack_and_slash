@@ -6,11 +6,13 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Info.cs" t="Include" />
+        <e p="FlyableBall.cs" t="Include" />
         <e p="Prefabs" t="Include">
           <e p="KY_effects" t="Include">
             <e p="MagicEffectsPackFree" t="Include">
-              <e p="ReadMe.txt" t="Include" />
+              <e p="prefab" t="Include">
+                <e p="ReadMe.txt" t="Include" />
+              </e>
             </e>
           </e>
         </e>
@@ -31,6 +33,7 @@
             </e>
             <e p="Rotate.cs" t="Include" />
             <e p="Skill" t="Include">
+              <e p="FireballSkill.cs" t="Include" />
               <e p="HealingBafSkill.cs" t="Include" />
               <e p="HealingHeavy.cs" t="Include" />
               <e p="PassiveSkill.cs" t="Include" />
@@ -43,6 +46,7 @@
             <e p="ActiveSkill.cs" t="Include" />
             <e p="DragSkill.cs" t="Include" />
             <e p="GamaManager.cs" t="Include" />
+            <e p="Info.cs" t="Include" />
             <e p="MouseTarget.cs" t="Include" />
             <e p="SkillManager.cs" t="Include" />
             <e p="UpgradeEnable.cs" t="Include" />
