@@ -54,6 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DropSkill.cs" />
     <Compile Include="Assets\Scripts\GizmoScripts\MouseClickPoint.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\AliveObject.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemyCheckPointUp.cs" />

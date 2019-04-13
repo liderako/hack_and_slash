@@ -46,13 +46,16 @@ public class GamaManager : MonoBehaviour
     public bool isTalentPanel;
     public bool isStaticPlayer;
     public Text textAmountTalentPoint;
-
+    public bool isSelectedSkill;
+    public DragSkill dragSkill;
+    
     // buttons
     public GameObject upgradeButton;
     public GameObject upgradeButtonStrange;
     public GameObject upgradeButtonAgility;
     public GameObject upgradeButtonCON;
 
+    public List<GameObject> imagesIconSkill;
 
     public static GamaManager gm;
 
@@ -71,7 +74,6 @@ public class GamaManager : MonoBehaviour
         {
             onSwapCharacterPanel();
         }
-
         if (Input.GetKeyUp(KeyCode.N))
         {
             onSwapTalentPanel();
@@ -80,6 +82,11 @@ public class GamaManager : MonoBehaviour
         visibleCharacterPanel();
         visibleTalentPanel();
         upgradePointEvent();
+        if (SkillManager.sk.isDrop)
+        {
+            imagesIconSkill[SkillManager.sk.number].GetComponent<Image>().sprite = dragSkill.sprite;
+            SkillManager.sk.isDrop = false;
+        }
     }
     
     public void targetViewEnemy(bool status)
