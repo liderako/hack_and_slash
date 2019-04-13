@@ -19,7 +19,14 @@ public class PlayerController : AliveObject
     [SerializeField]private EnemyController _targetEnemy;
     [SerializeField]private ParticleSystem _particalSystemLevelUp;
     [SerializeField]private float distanceRange;
-    
+	[SerializeField]private GameObject[] weapons;
+	[SerializeField]private WeaponType currentWeapon;
+    enum WeaponType
+	{
+		Sword,
+		Axe,
+		Knife
+	}
     private NavMeshAgent agent;
     private Animator animator;
     private int amountPointTelent;
@@ -33,21 +40,25 @@ public class PlayerController : AliveObject
     
     void Update()
     {
-        if (hp > 0)
+		if (hp > 0)
         {
 			animator.SetFloat("Speed", agent.velocity.magnitude);
-            if (!GamaManager.gm.isStaticPlayer)
+			HideWeapon();
+			if (!GamaManager.gm.isStaticPlayer)
             {
-                move();
+				move();
             }
             if (Input.GetMouseButtonUp(0) && isEnemy)
             {
-                isAttackEnd = true;
+				transform.LookAt(_targetEnemy.gameObject.transform.position);
+				isAttackEnd = true;
                 
             }
             else if (Input.GetMouseButton(0) && isEnemy)
             {
-                attackAnimationStart();
+				
+				transform.LookAt(_targetEnemy.gameObject.transform.position);
+				attackAnimationStart();
             }
             passiveSkills();
         }
@@ -77,7 +88,6 @@ public class PlayerController : AliveObject
                             _targetEnemy = tmp;
                             mouseTarget.target = _targetEnemy;
                             mouseTarget.isTarget = true;
-							transform.LookAt(_targetEnemy.gameObject.transform.position);
                             attackAnimationStart();
                         }
                     }
@@ -90,6 +100,16 @@ public class PlayerController : AliveObject
         }
 
     }
+
+	private void HideWeapon()
+	{
+		foreach(var weap in weapons)
+		{
+			weap.SetActive(false);
+		}
+		if (animator.GetFloat("Speed") == 0)
+			weapons[(int)currentWeapon].SetActive(true);
+	}
 
     public void animationRun(bool status)
     {
@@ -127,7 +147,8 @@ public class PlayerController : AliveObject
 
     public float getDamage()
     {
-        return Random.Range(minDamage, maxDamage);
+		WeaponStats weap = weapons[(int)currentWeapon].GetComponent<WeaponStats>();
+		return Random.Range(minDamage + weap.damage, maxDamage + weap.damage);
     }
 
     public int getAmountPointTalent()
@@ -200,13 +221,16 @@ public class PlayerController : AliveObject
     
     private void attackAnimationStart()
     {
-        animator.SetBool("attack", true);
+		WeaponStats weap = weapons[(int)currentWeapon].GetComponent<WeaponStats>();
+		animator.speed = weap.attackSpeed;
+		animator.SetBool("attack", true);
         isEnemy = true;
     }
     
     private void attackAnimationStop()
     {
-        animator.SetBool("attack", false);
+		animator.speed = 1;
+		animator.SetBool("attack", false);
         isEnemy = false;
     }
     
