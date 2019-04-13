@@ -157,7 +157,7 @@ public class PlayerController : AliveObject
             mouseTarget.target = null;
             isAttackEnd = false;
         }
-        _targetEnemy.hit(gameObject);
+        _targetEnemy.hit(getDamage());
         if (_targetEnemy.hp <= 0 && _targetEnemy.isExp)
         {
             isAttackEnd = true;

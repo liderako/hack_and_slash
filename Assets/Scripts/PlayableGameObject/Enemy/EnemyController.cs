@@ -88,18 +88,8 @@ public class EnemyController : AliveObject
         }
     }
     
-    public void hit(GameObject player)
+    public void hit(float damageTmp)
     {
-        float damageTmp = 0;
-        if (player.gameObject.tag == "Player")
-        {
-            damageTmp = player.GetComponent<PlayerController>().getDamage();
-        }
-        else
-        {
-            return;
-        }
-
         if (!isDead)
         {
             hp -= System.Convert.ToInt32(damageTmp * (1 - armor / 200));
@@ -114,7 +104,21 @@ public class EnemyController : AliveObject
         }
         if (!isPlayer)
         {
-            targetOnPlayer(player);
+            findPlayer();
+        }
+    }
+    
+    void findPlayer()
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, 3f);
+        int i = 0;
+        while (i < hitColliders.Length)
+        {
+            if (hitColliders[i].gameObject.tag.Equals("Player"))
+            {
+                targetOnPlayer(hitColliders[i].gameObject);
+            }
+            i++;
         }
     }
     

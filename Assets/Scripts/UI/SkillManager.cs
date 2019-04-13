@@ -27,7 +27,7 @@ public class SkillManager : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.Alpha3))
         {
-            Debug.Log("Alpha 3");
+            skill[2].action(pc);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha4))
         {
