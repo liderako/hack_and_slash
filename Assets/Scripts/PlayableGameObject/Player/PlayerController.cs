@@ -61,14 +61,12 @@ public class PlayerController : AliveObject
         if (Input.GetMouseButton(0) && !isEnemy)
         {
             Vector3 mouse = Input.mousePosition;
-            mouse.z = 1000;
             Ray ray = Camera.main.ScreenPointToRay(mouse);
             Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
-//                Debug.Log(hit.transform.gameObject.name);
-                if (hit.transform.gameObject.layer == 10 && Vector3.Distance(hit.point, transform.position) <= distanceRange)
+                if (hit.transform.gameObject.layer == 10 && Vector3.Distance(hit.transform.position, transform.position) <= distanceRange)
                 {
                     EnemyController tmp = hit.transform.gameObject.GetComponent<EnemyController>();
                     if (75 + agility - tmp.agility > 50)
@@ -78,6 +76,7 @@ public class PlayerController : AliveObject
                             _targetEnemy = tmp;
                             mouseTarget.target = _targetEnemy;
                             mouseTarget.isTarget = true;
+							transform.LookAt(_targetEnemy.gameObject.transform.position);
                             attackAnimationStart();
                         }
                     }
@@ -88,10 +87,8 @@ public class PlayerController : AliveObject
                 }
             }
         }
-        if (agent.remainingDistance <= agent.stoppingDistance && isRun)
-        {
-            animationRun(false);
-        }
+		animator.SetFloat("Speed", agent.velocity.magnitude);
+
     }
 
     public void animationRun(bool status)
@@ -111,6 +108,7 @@ public class PlayerController : AliveObject
     
     private void OnTriggerEnter(Collider other)
     {
+	
         if (other.gameObject.tag == "HitPoint")
         {
             increaselifePotion();
@@ -174,13 +172,9 @@ public class PlayerController : AliveObject
     
     private void _moveOnPosition(Vector3 hit)
     {
-        Vector3 difference = hit - transform.position; 
-        difference.Normalize();
-        float rotationY = Mathf.Atan2(difference.z, difference.x) * Mathf.Rad2Deg;
-        agent.transform.rotation = Quaternion.Euler(0f, -rotationY + 90, 0);
+		transform.LookAt(hit);
         agent.SetDestination(hit);
         point.transform.position = hit;
-        animationRun(true);
     }
 
     public void cheatLevelUp()
