@@ -51712,9 +51712,6 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-<<<<<<< HEAD
-  - time: 0.33333334
-=======
   - time: 0
     functionName: beforeAttack
     data: 
@@ -51722,8 +51719,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.9
->>>>>>> master
+  - time: 0.3
     functionName: attack
     data: 
     objectReferenceParameter: {fileID: 0}

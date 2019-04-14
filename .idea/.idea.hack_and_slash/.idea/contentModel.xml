@@ -29,6 +29,7 @@
             <e p="Player" t="Include">
               <e p="CameraController.cs" t="Include" />
               <e p="PlayerController.cs" t="Include" />
+              <e p="WeaponStats.cs" t="Include" />
             </e>
             <e p="Rotate.cs" t="Include" />
             <e p="Skill" t="Include">
@@ -46,10 +47,13 @@
           </e>
           <e p="UI" t="Include">
             <e p="ActiveSkill.cs" t="Include" />
+            <e p="DragEndDropHendler.cs" t="Include" />
             <e p="DragSkill.cs" t="Include" />
             <e p="GamaManager.cs" t="Include" />
-            <e p="Info.cs" t="Include" />
             <e p="infoNextLevel.cs" t="Include" />
+            <e p="InventoryCell.cs" t="Include" />
+            <e p="InventoryManager.cs" t="Include" />
+            <e p="InvertoryMouseChecker.cs" t="Include" />
             <e p="LoadGame.cs" t="Include" />
             <e p="MouseTarget.cs" t="Include" />
             <e p="SkillManager.cs" t="Include" />
