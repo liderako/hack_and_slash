@@ -3105,7 +3105,7 @@ Transform:
   m_GameObject: {fileID: 1862107410815556}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.35, y: -3.4737387e-17, z: 0.73}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4629551603989802}
   - {fileID: 4994521836820776}
@@ -3197,12 +3197,12 @@ MonoBehaviour:
   level: 50
   exp: 50000
   credits: 50000
-  _passiveSkills: []
-  isPlayer: 0
-  isAttack: 0
   isSpawn: 0
   isDead: 0
   isExp: 0
+  _passiveSkills: []
+  isPlayer: 0
+  isAttack: 0
   playerObject: {fileID: 0}
   player: {fileID: 0}
   playerController: {fileID: 0}
