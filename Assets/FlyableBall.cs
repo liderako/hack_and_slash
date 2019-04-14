@@ -38,8 +38,7 @@ public class FlyableBall : MonoBehaviour
     private void LateUpdate()
     {
         if (!isDamage)
-        {
-            explosionDamage();
+        {DSAS
         }
     }
 
