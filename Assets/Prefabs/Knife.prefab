@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1631579385098133025}
   - component: {fileID: 1621300244280704867}
   - component: {fileID: 7164495072475900304}
+  - component: {fileID: 8923901124961278975}
   m_Layer: 0
   m_Name: Knife
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,4 +94,19 @@ MonoBehaviour:
   damage: 2
   attackSpeed: 2
   cost: 22
+  id: 0
   weaponType: 2
+--- !u!136 &8923901124961278975
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644438496860052123}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.0036500602
+  m_Height: 0.020870097
+  m_Direction: 2
+  m_Center: {x: -0.0000013224835, y: -0.000554432, z: 0.0064199497}

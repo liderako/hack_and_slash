@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6306237480495448450}
   - component: {fileID: 8980683853753636918}
   - component: {fileID: 4687170195221477770}
+  - component: {fileID: 7829597415299603213}
   m_Layer: 9
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,3 +94,19 @@ MonoBehaviour:
   damage: 5
   attackSpeed: 1
   cost: 10
+  id: 0
+  weaponType: 0
+--- !u!136 &7829597415299603213
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6072525663837814667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.5
+  m_Height: 9.52891
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}

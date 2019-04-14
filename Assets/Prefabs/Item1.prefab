@@ -456,3 +456,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 468817c21ab7d42bf8a0066f0f184453, type: 3}
   - {fileID: 21300000, guid: 71d8c8afab1844e15ab07bc9f4e42971, type: 3}
   - {fileID: 21300000, guid: b36186339c6d94897b8b4a7ad1a59cca, type: 3}
+  weaponPrefubs:
+  - {fileID: 6072525663837814667, guid: f567dbf02ece6e94cb2c5e7e7c826fad, type: 3}
+  - {fileID: 8655894517066485916, guid: b326812175740784b965aab7931cccb3, type: 3}
+  - {fileID: 1644438496860052123, guid: 486575561f5211241915bb4b051f87c2, type: 3}
