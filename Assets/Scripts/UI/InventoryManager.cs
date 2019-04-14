@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    public List<GameObject> weaponsInInventory = new List<GameObject>();
-    public GameObject[] cell;
+    public int weaponsNmber = 0;
+    public GameObject[] cells;
     private PlayerController pc;
     public bool isInvertoryActive;
     public GameObject invertoryPanel;
@@ -19,13 +19,11 @@ public class InventoryManager : MonoBehaviour
         isInvertoryActive = false;
         pc = GameObject.Find("Maya").GetComponent<PlayerController>();
         gm = GameObject.Find("GamaManager").GetComponent<GamaManager>();
-//        int i = 0;
-//        foreach (var weapon in weaponsInInventory)
-//        {
-//            
-//            i++;
-//        }
-        
+        foreach (var cell in cells)
+        {
+            if (cell.GetComponent<InventoryCell>().currentWeapon)
+                weaponsNmber++;
+        }
     }
 
     public void ChangeInventoryStatus()
@@ -54,5 +52,29 @@ public class InventoryManager : MonoBehaviour
                 weap.transform.eulerAngles = euler;
             }
         }
+    }
+
+    public void TakeItem(GameObject weap)
+    {
+        foreach (var cell in cells)
+        {
+            if (cell.GetComponent<InventoryCell>().currentWeapon == null)
+            {
+                cell.GetComponent<InventoryCell>().TakeNewItem(weap.GetComponent<WeaponStats>());
+                break;
+            }
+        }
+    }
+    
+    private void Update()
+    {
+        int newNumber = 0;
+        foreach (var cell in cells)
+        {
+            if (cell.GetComponent<InventoryCell>().currentWeapon != null)
+                newNumber++;
+        }
+        if (weaponsNmber != newNumber)
+            weaponsNmber = newNumber;
     }
 }

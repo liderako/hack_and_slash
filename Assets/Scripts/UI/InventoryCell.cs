@@ -14,6 +14,7 @@ public class InventoryCell : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public Text cost;
     public Image currWeaponImage;
     public Sprite[] weaponImages;
+    public GameObject[] weaponPrefubs;
     private InventoryManager _im;
     private void Start()
     {
@@ -67,7 +68,7 @@ public class InventoryCell : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void DropItem()
     {
-        if (_im.mouseOutsideInvertory)
+        if (_im.mouseOutsideInvertory && _im.weaponsNmber > 1)
         {
             _im.putWeaponOnTheGround(currentWeapon);
             currentWeapon = null;
@@ -87,5 +88,23 @@ public class InventoryCell : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if(currentWeapon)
             cell.PutItem(currentWeapon, this);
         currentWeapon = weap;
+    }
+
+    public void TakeNewItem(WeaponStats weaponStats)
+    {
+        foreach (var w in weaponPrefubs)
+        {
+            if (w.GetComponent<WeaponStats>().weaponType == weaponStats.weaponType)
+            {
+                currentWeapon = w;
+                currentWeapon.GetComponent<WeaponStats>().damage = weaponStats.damage;
+                currentWeapon.GetComponent<WeaponStats>().attackSpeed = weaponStats.attackSpeed;
+                currentWeapon.GetComponent<WeaponStats>().cost = weaponStats.cost;
+                currentWeapon.GetComponent<WeaponStats>().custom = weaponStats.custom;
+                currentWeapon.GetComponent<WeaponStats>().id = Random.Range(12, 1000);
+                break;
+            }
+        }
+        Destroy(weaponStats.gameObject);
     }
 }
