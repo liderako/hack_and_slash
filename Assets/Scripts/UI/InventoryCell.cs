@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class InventoryCell : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    public GameObject currentWeapon;
+    public GameObject currentWeapon = null;
     private Image _image;
     public GameObject stats;
     public Text damage;
@@ -23,6 +23,7 @@ public class InventoryCell : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        _im.cellUnderMouse = gameObject;
         WeaponStats _weaponStats;
         _image.color = Color.green;
         if (currentWeapon)
@@ -60,6 +61,31 @@ public class InventoryCell : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        _im.changeToWeapon(currentWeapon.GetComponent<WeaponStats>());
+        if (currentWeapon)
+            _im.changeToWeapon(currentWeapon.GetComponent<WeaponStats>());
+    }
+
+    public void DropItem()
+    {
+        if (_im.mouseOutsideInvertory)
+        {
+            _im.putWeaponOnTheGround(currentWeapon);
+            currentWeapon = null;
+            stats.SetActive(false);
+        }
+        else if (_im.cellUnderMouse != gameObject)
+        {
+            GameObject weaponToPut = currentWeapon;
+            currentWeapon = null;
+            _im.cellUnderMouse.GetComponent<InventoryCell>().PutItem(weaponToPut, this);
+            
+        }
+    }
+
+    public void PutItem(GameObject weap, InventoryCell cell)
+    {
+        if(currentWeapon)
+            cell.PutItem(currentWeapon, this);
+        currentWeapon = weap;
     }
 }
