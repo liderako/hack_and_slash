@@ -14,6 +14,7 @@ public class GamaManager : MonoBehaviour
     public Slider hpSlider;
     public Slider xpSlider;
     public PlayerController pc;
+    public InventoryManager im;
 
     // Panel
     public GameObject panelPlayer;
@@ -79,6 +80,10 @@ public class GamaManager : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.N))
         {
             onSwapTalentPanel();
+        }
+        if (Input.GetKeyUp(KeyCode.I))
+        {
+            im.ChangeInventoryStatus();
         }
         visibleViewGame();
         visibleCharacterPanel();
@@ -164,11 +169,11 @@ public class GamaManager : MonoBehaviour
             textStrengh.text = "Strengh: " + pc.strengh;
             textAgility.text = "Agility: " + pc.agility;
             textConstitution.text = "Constitution: " + pc.constitution;
-            textArmor.text = "Armor" + pc.armor;
+            textArmor.text = "Armor: " + pc.armor;
             textUpgradePoints.text = "Upgrade Points: " + pc.upgradePoint;
             textMinMaxDamage.text = "Min-Max Damage: " + pc.minDamage + "-" + pc.maxDamage;
             textMaxHp.text = "Max Hp: " + pc.maxHp;
-            textEXpCharacter.text = "EXP:" + pc.exp;
+            textEXpCharacter.text = "EXP: " + pc.exp;
             textXpToNextLevel.text = "Exp to next level: " + pc.nextLevelXP;
             textCredits.text = "Credits: " + pc.credits;
             textAmountPointsTalents.text = "Amount Points Talents: " + pc.getAmountPointTalent();

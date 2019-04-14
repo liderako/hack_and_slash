@@ -93,3 +93,4 @@ MonoBehaviour:
   damage: 2
   attackSpeed: 2
   cost: 22
+  weaponType: 2
