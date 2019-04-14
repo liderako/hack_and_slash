@@ -111,23 +111,24 @@ public class EnemyController : AliveObject
     
     void findPlayer()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, 3f);
-        int i = 0;
-        while (i < hitColliders.Length)
-        {
-            if (hitColliders[i].gameObject.tag.Equals("Player"))
-            {
-                targetOnPlayer(hitColliders[i].gameObject);
-            }
-            i++;
-        }
+        targetOnPlayer(GameObject.Find("Maya"));
+//        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, 3f);
+//        int i = 0;
+//        while (i < hitColliders.Length)
+//        {
+//            if (hitColliders[i].gameObject.tag.Equals("Player"))
+//            {
+//                targetOnPlayer(hitColliders[i].gameObject);
+//            }
+//            i++;
+//        }
     }
     
     public void upgradeStat()
     {
-        strengh = strengh + (strengh * 0.15f);
+        strengh = strengh + (strengh * 0.08f);
         constitution = constitution + (constitution * 0.15f);
-        agility = agility + (agility * 0.15f);
+        agility = agility + (agility * 0.05f);
         exp = exp + (exp * 0.15f);
         updateHp();
         updateDamage();

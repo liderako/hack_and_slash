@@ -54,7 +54,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FlyableBall.cs" />
     <Compile Include="Assets\Scripts\GizmoScripts\MouseClickPoint.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\AliveObject.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemyCheckPointUp.cs" />
@@ -63,7 +62,10 @@
     <Compile Include="Assets\Scripts\PlayableGameObject\Player\CameraController.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Rotate.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Skill\AttackForPlace.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Skill\Bomb.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Skill\FireballSkill.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Skill\FlyableBall.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Skill\HealingBafSkill.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Skill\HealingHeavy.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Skill\PassiveSkill.cs" />
@@ -74,6 +76,8 @@
     <Compile Include="Assets\Scripts\UI\DragSkill.cs" />
     <Compile Include="Assets\Scripts\UI\GamaManager.cs" />
     <Compile Include="Assets\Scripts\UI\Info.cs" />
+    <Compile Include="Assets\Scripts\UI\infoNextLevel.cs" />
+    <Compile Include="Assets\Scripts\UI\LoadGame.cs" />
     <Compile Include="Assets\Scripts\UI\MouseTarget.cs" />
     <Compile Include="Assets\Scripts\UI\SkillManager.cs" />
     <Compile Include="Assets\Scripts\UI\UpgradeEnable.cs" />

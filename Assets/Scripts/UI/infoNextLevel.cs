@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Info : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+
+public class infoNextLevel : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     public Skill skill;
@@ -14,7 +15,7 @@ public class Info : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerEnter(PointerEventData eventData)
     {
         fon.SetActive(true);
-        _text.GetComponent<Text>().text = skill.getInfo();
+        _text.GetComponent<Text>().text = skill.getInfoLevelNext();
     }
 
     public void OnPointerExit(PointerEventData eventData)

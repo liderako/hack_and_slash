@@ -115,7 +115,7 @@ MonoBehaviour:
   speed: 1.5
   distance: 1
   originVector: {x: 0, y: 0, z: 0}
-  damage: 15
+  damage: 0
 --- !u!54 &7780515583689634456
 Rigidbody:
   m_ObjectHideFlags: 0

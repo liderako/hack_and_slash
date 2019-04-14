@@ -28,7 +28,7 @@ public class MouseTarget : MonoBehaviour
         mouse = Input.mousePosition;
         mouse.z = 10;
         ray = Camera.main.ScreenPointToRay(mouse);
-        Debug.DrawRay(ray.origin, ray.direction * 10, Color.blue);
+        //Debug.DrawRay(ray.origin, ray.direction * 10, Color.blue);
         if (Physics.Raycast(ray, out hit))
         {
             if (hit.transform.gameObject.tag == "EnemyObject")
