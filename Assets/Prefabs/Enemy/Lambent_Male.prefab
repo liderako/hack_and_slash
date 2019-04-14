@@ -1,21 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!4 &6133653976500523460 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4950018265548949525, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
-  m_PrefabInstance: {fileID: 1274204962515343825}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6133653976500523463 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4950018265548949526, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
-  m_PrefabInstance: {fileID: 1274204962515343825}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98cbb224875447059479e8e2f2f5474, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5995943554059406225
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,6 +733,7 @@ GameObject:
   - component: {fileID: 8102135937700909805}
   - component: {fileID: 1148606659362478263}
   - component: {fileID: 5583366514164102928}
+  - component: {fileID: 672306658821378612}
   m_Layer: 10
   m_Name: Lambent_Male
   m_TagString: EnemyObject
@@ -859,6 +844,7 @@ MonoBehaviour:
   isDead: 0
   isExp: 0
   playerObject: {fileID: 0}
+  player: {fileID: 0}
   playerController: {fileID: 0}
   loot: {fileID: 7571791527010952189, guid: 89471838198cb41049454ebedd0873d1, type: 3}
   _parent: {fileID: 0}
@@ -894,6 +880,102 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!82 &672306658821378612
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5995943554662444038}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 50b2431c8b7e14a13ba716a90ee5c17d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 0.23299909
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.505
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5995943554676906664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2879,6 +2961,22 @@ Transform:
   m_Father: {fileID: 5995943554486586658}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6133653976500523460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4950018265548949525, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
+  m_PrefabInstance: {fileID: 1274204962515343825}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6133653976500523463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4950018265548949526, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
+  m_PrefabInstance: {fileID: 1274204962515343825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98cbb224875447059479e8e2f2f5474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1274204962515343825
 PrefabInstance:
   m_ObjectHideFlags: 0

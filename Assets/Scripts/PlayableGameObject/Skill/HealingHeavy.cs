@@ -47,4 +47,17 @@ public class HealingHeavy : Skill
             _ps.Play();
         }
     }
+    
+    public override string getInfo()
+    {
+        return "Regen hp " + (GamaManager.gm.pc.maxHp * powerRegen) + " CD " + coolDownTime + " seconds ";
+    }
+    
+    public override string getInfoLevelNext()
+    {
+        float tmpPowerRegen = powerRegen + (powerRegen * 0.50f);
+        float tmpCoolDownTime = coolDownTime - (coolDownTime * 0.1f);
+            
+        return "Regen hp " + (GamaManager.gm.pc.maxHp * tmpPowerRegen) + " CD " + tmpCoolDownTime + " seconds ";
+    }
 }

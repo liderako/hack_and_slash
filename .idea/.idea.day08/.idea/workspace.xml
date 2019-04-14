@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0e6e71a-8472-4ece-aeb7-c96584bc375b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.hack_and_slash/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hack_and_slash/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Lambent_Female.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Lambent_Female.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Lambent_Male.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Lambent_Male.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Maya.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Maya.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewBrush.brush" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NewBrush.brush.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/SampleScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/SampleScene/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/SampleScene/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestSceneGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestSceneGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestSceneGame/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestSceneGame/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="740573300">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="17" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayableGameObject/Enemy/EnemyController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <marker date="1555167699000" expanded="false" signature="6:100" ph="..." />
+                <marker date="1555167699000" expanded="true" signature="144:6192" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="851:886" ph="/* Unity api methods ... */" />
+                <marker date="1555167699000" expanded="true" signature="903:1221" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="1240:1582" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="1266:1505" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="1457:1495" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="1531:1576" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="1594:1903" ph="/* void OnTriggerStay(Collider other) ... */" />
+                <marker date="1555167699000" expanded="true" signature="1909:1940" ph="/* Public action ... */" />
+                <marker date="1555167699000" expanded="true" signature="1965:2228" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="2029:2222" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="2150:2212" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="2270:2681" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="2297:2606" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="2405:2596" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="2629:2675" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="2708:3061" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="2865:3055" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="2940:3028" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="3096:3343" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="3378:3412" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="3422:3454" ph="/* Private action ... */" />
+                <marker date="1555167699000" expanded="true" signature="3483:3826" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="3684:3820" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="3857:4643" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="3885:3930" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="3957:4637" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="4105:4181" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="4249:4445" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="4513:4627" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="4673:4963" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="4865:4957" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="4997:5139" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="5041:5133" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="5179:5489" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="5551:5819" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="5623:5813" ph="{...}" />
+                <marker date="1555167699000" expanded="true" signature="5825:5858" ph="/* Animation event ... */" />
+                <marker date="1555167699000" expanded="true" signature="5894:6190" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayableGameObject/Enemy/EnemyController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayableGameObject/Enemy/EnemyController.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/Library/PackageCache/com.unity.ads@2.0.8/package.json" />
+      <path value="$PROJECT_DIR$/Library/PackageCache/com.unity.analytics@3.0.9/package.json" />
+      <path value="$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.2.9/package.json" />
+      <path value="$PROJECT_DIR$/Library/PackageCache/com.unity.package-manager-ui@2.0.0-preview.7/package.json" />
+      <path value="$PROJECT_DIR$/Library/PackageCache/com.unity.purchasing@2.0.1/package.json" />
+      <path value="$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@1.3.0/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="FileSystemExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="hack_and_slash" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="hack_and_slash" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Assets" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="hack_and_slash" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Assets" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Scripts" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="hack_and_slash" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Assets" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Scripts" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="PlayableGameObject" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="hack_and_slash" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Assets" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Scripts" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="PlayableGameObject" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Enemy" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0e6e71a-8472-4ece-aeb7-c96584bc375b" name="Default Changelist" comment="" />
+      <created>1555200288182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555200288182</updated>
+      <workItem from="1555200292986" duration="66000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="66000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13463067" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayableGameObject/Enemy/EnemyController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <marker date="1555167699000" expanded="false" signature="6:100" ph="..." />
+            <marker date="1555167699000" expanded="true" signature="144:6192" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="851:886" ph="/* Unity api methods ... */" />
+            <marker date="1555167699000" expanded="true" signature="903:1221" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="1240:1582" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="1266:1505" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="1457:1495" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="1531:1576" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="1594:1903" ph="/* void OnTriggerStay(Collider other) ... */" />
+            <marker date="1555167699000" expanded="true" signature="1909:1940" ph="/* Public action ... */" />
+            <marker date="1555167699000" expanded="true" signature="1965:2228" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="2029:2222" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="2150:2212" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="2270:2681" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="2297:2606" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="2405:2596" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="2629:2675" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="2708:3061" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="2865:3055" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="2940:3028" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="3096:3343" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="3378:3412" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="3422:3454" ph="/* Private action ... */" />
+            <marker date="1555167699000" expanded="true" signature="3483:3826" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="3684:3820" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="3857:4643" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="3885:3930" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="3957:4637" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="4105:4181" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="4249:4445" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="4513:4627" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="4673:4963" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="4865:4957" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="4997:5139" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="5041:5133" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="5179:5489" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="5551:5819" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="5623:5813" ph="{...}" />
+            <marker date="1555167699000" expanded="true" signature="5825:5858" ph="/* Animation event ... */" />
+            <marker date="1555167699000" expanded="true" signature="5894:6190" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -60,8 +60,11 @@ public class GamaManager : MonoBehaviour
 
     public List<GameObject> imagesIconSkill;
 
+    
     public static GamaManager gm;
-
+    public GameObject image1;
+    public GameObject image2;
+    
     void Awake () {
         if (gm == null)
             gm = this;
@@ -248,6 +251,8 @@ public class GamaManager : MonoBehaviour
             panelTalent.SetActive(false);
             isTalentPanel = false;
             isStaticPlayer = false;
+            image1.SetActive(false);
+            image2.SetActive(false);
         }
     }
 }

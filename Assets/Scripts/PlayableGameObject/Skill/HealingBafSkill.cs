@@ -25,8 +25,8 @@ public class HealingBafSkill : Skill
         {
             levelSkill += 1;
             coolDownTime = coolDownTime - (coolDownTime * 0.10f);
+            powerRegen = powerRegen + (powerRegen * 0.1f);
             GamaManager.gm.upgradeSkillDone();
-
         }
     }
 
@@ -71,5 +71,18 @@ public class HealingBafSkill : Skill
             oldTimeActivate = Time.time;
             timeToEnd = Time.time;
         }
+    }
+    
+    public override string getInfo()
+    {
+        return "Regen hp " + (GamaManager.gm.pc.maxHp * powerRegen) + " CD " + coolDownTime + " seconds ";
+    }
+    
+    public override string getInfoLevelNext()
+    {
+        float tmpCoolDownTime = coolDownTime - (coolDownTime * 0.10f);
+        float tmpPowerRegen = powerRegen + (powerRegen * 0.1f);
+            
+        return "Regen hp " + (GamaManager.gm.pc.maxHp * tmpPowerRegen) + " CD " + tmpCoolDownTime + " seconds ";
     }
 }
