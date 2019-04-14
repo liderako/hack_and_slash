@@ -8,9 +8,6 @@ public class EnemyController : AliveObject
 
     public bool isPlayer;
     public bool isAttack;
-    [HideInInspector]public bool isSpawn;
-    [HideInInspector]public bool isDead;
-    [HideInInspector]public bool isExp;
     
     public GameObject playerObject;
     public GameObject player;
@@ -60,19 +57,6 @@ public class EnemyController : AliveObject
             deadLogic();
         }
     }
-    
-
-
-    /*void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "Player" && hp > 0 && isPlayer && playerController.hp <= 0)
-        {
-            isPlayer = false;
-            isAttack = false;
-            agent.enabled = false;
-            _animator.SetBool("attack", false);
-        }
-    }*/
 
     /*
      * Public action
@@ -89,7 +73,7 @@ public class EnemyController : AliveObject
         }
     }
     
-    public void hit(float damageTmp)
+    public override void hit(float damageTmp)
     {
         if (!isDead)
         {
@@ -112,16 +96,6 @@ public class EnemyController : AliveObject
     void findPlayer()
     {
         targetOnPlayer(GameObject.Find("Maya"));
-//        Collider[] hitColliders = Physics.OverlapSphere(gameObject.transform.position, 3f);
-//        int i = 0;
-//        while (i < hitColliders.Length)
-//        {
-//            if (hitColliders[i].gameObject.tag.Equals("Player"))
-//            {
-//                targetOnPlayer(hitColliders[i].gameObject);
-//            }
-//            i++;
-//        }
     }
     
     public void upgradeStat()
@@ -134,7 +108,7 @@ public class EnemyController : AliveObject
         updateDamage();
     }
 
-    public string GetTypeObject()
+    public override string GetTypeObject()
     {
         return _type;
     }

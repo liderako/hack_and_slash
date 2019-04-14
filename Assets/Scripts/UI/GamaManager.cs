@@ -109,7 +109,7 @@ public class GamaManager : MonoBehaviour
         }
     }
     
-    public void target(EnemyController enemy)
+    public void target(AliveObject enemy)
     {
         targetViewEnemy(true);
         hpEnemy.maxValue = enemy.maxHp;

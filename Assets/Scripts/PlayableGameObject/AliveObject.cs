@@ -15,6 +15,10 @@ public class AliveObject : MonoBehaviour
     public float level;
     public float exp;
     public float credits;
+
+    public bool isSpawn;
+    public bool isDead;
+    public bool isExp;
     public List<PassiveSkill> _passiveSkills;
 
     public void updateState()
@@ -47,4 +51,11 @@ public class AliveObject : MonoBehaviour
             sk.action(gameObject);
         }
     }
+
+    public virtual string GetTypeObject()
+    {
+        return "null";
+    }
+
+    public virtual void hit(float damage){}
 }

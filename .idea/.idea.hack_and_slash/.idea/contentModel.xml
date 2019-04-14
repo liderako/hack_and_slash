@@ -6,6 +6,14 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="cave_troll" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="camera_follow.cs" t="Include" />
+          </e>
+          <e p="shaders" t="Include">
+            <e p="Standard Two Sided Soft Blend.shader" t="Include" />
+          </e>
+        </e>
         <e p="Prefabs" t="Include">
           <e p="KY_effects" t="Include">
             <e p="MagicEffectsPackFree" t="Include">
@@ -24,6 +32,7 @@
             <e p="Enemy" t="Include">
               <e p="EnemyCheckPointUp.cs" t="Include" />
               <e p="EnemyController.cs" t="Include" />
+              <e p="EnemyControllerBoss.cs" t="Include" />
               <e p="EnemySpawner.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
@@ -50,6 +59,7 @@
             <e p="DragEndDropHendler.cs" t="Include" />
             <e p="DragSkill.cs" t="Include" />
             <e p="GamaManager.cs" t="Include" />
+            <e p="Info.cs" t="Include" />
             <e p="infoNextLevel.cs" t="Include" />
             <e p="InventoryCell.cs" t="Include" />
             <e p="InventoryManager.cs" t="Include" />

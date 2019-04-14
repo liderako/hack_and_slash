@@ -54,10 +54,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\cave_troll\scripts\camera_follow.cs" />
     <Compile Include="Assets\Scripts\GizmoScripts\MouseClickPoint.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\AliveObject.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemyCheckPointUp.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemyControllerBoss.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Enemy\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Player\CameraController.cs" />
     <Compile Include="Assets\Scripts\PlayableGameObject\Player\PlayerController.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="Assets\Scripts\UI\SkillManager.cs" />
     <Compile Include="Assets\Scripts\UI\UpgradeEnable.cs" />
     <None Include="Assets\Prefabs\KY_effects\MagicEffectsPackFree\prefab\ReadMe.txt" />
+    <None Include="Assets\cave_troll\shaders\Standard Two Sided Soft Blend.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Volumes/Storage/goinfre/asvirido/hack_and_slash/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

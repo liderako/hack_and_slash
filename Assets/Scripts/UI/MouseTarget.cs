@@ -15,7 +15,7 @@ public class MouseTarget : MonoBehaviour
 
     public bool isTarget;
 
-    public EnemyController target;
+    public AliveObject target;
 
     public void Start()
     {
@@ -33,7 +33,7 @@ public class MouseTarget : MonoBehaviour
         {
             if (hit.transform.gameObject.tag == "EnemyObject")
             {
-                GamaManager.gm.target(hit.transform.gameObject.GetComponent<EnemyController>());
+                GamaManager.gm.target(hit.transform.gameObject.GetComponent<AliveObject>());
             }
             else if (isTarget)
             {
