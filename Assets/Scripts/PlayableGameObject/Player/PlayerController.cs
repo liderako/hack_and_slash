@@ -7,10 +7,8 @@ using Random = UnityEngine.Random;
 
 public class PlayerController : AliveObject
 {
-    public bool isRun;
     public bool isEnemy;
     public bool isAttackEnd;
-    public GameObject point;
     public int upgradePoint;
     public float nextLevelXP;
     public MouseTarget mouseTarget;
@@ -23,9 +21,10 @@ public class PlayerController : AliveObject
     private NavMeshAgent agent;
     private Animator animator;
     private int amountPointTelent;
-    
+    public List<AudioSource> _attackSound;
     public void Start()
     {
+        constitution = 125;
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         updateState();
@@ -57,29 +56,30 @@ public class PlayerController : AliveObject
         }
     }
 
+    public float getSpeed()
+    {
+        return agent.velocity.magnitude;
+    }
+    
     void move()
     {
         if (Input.GetMouseButton(0) && !isEnemy)
         {
             Vector3 mouse = Input.mousePosition;
             Ray ray = Camera.main.ScreenPointToRay(mouse);
-            Debug.DrawRay(ray.origin, ray.direction * 10, Color.red);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
             {
                 if (hit.transform.gameObject.layer == 10 && Vector3.Distance(hit.transform.position, transform.position) <= distanceRange)
                 {
                     EnemyController tmp = hit.transform.gameObject.GetComponent<EnemyController>();
-                    if (75 + agility - tmp.agility > 50)
+                    if (!tmp.isDead && tmp.isSpawn)
                     {
-                        if (!tmp.isDead && tmp.isSpawn)
-                        {
-                            _targetEnemy = tmp;
-                            mouseTarget.target = _targetEnemy;
-                            mouseTarget.isTarget = true;
-							transform.LookAt(_targetEnemy.gameObject.transform.position);
-                            attackAnimationStart();
-                        }
+                        _targetEnemy = tmp;
+                        mouseTarget.target = _targetEnemy;
+                        mouseTarget.isTarget = true;
+                        transform.LookAt(_targetEnemy.gameObject.transform.position);
+                        attackAnimationStart();
                     }
                 }
                 else if (hit.transform.gameObject.layer != 5)
@@ -94,7 +94,6 @@ public class PlayerController : AliveObject
     public void animationRun(bool status)
     {
         animator.SetBool("Run", status);
-        isRun = status;
     }
 
     public void hit(float damage)
@@ -160,7 +159,11 @@ public class PlayerController : AliveObject
             mouseTarget.target = null;
             isAttackEnd = false;
         }
-        _targetEnemy.hit(getDamage());
+
+        if (75 + agility - _targetEnemy.agility > 50)
+        {
+            _targetEnemy.hit(getDamage());
+        }
         if (_targetEnemy.hp <= 0 && _targetEnemy.isExp)
         {
             isAttackEnd = true;
@@ -169,12 +172,19 @@ public class PlayerController : AliveObject
             _targetEnemy.isExp = false;
         }
     }
+
+    public void beforeAttack()
+    {
+        _attackSound[Random.Range(0, _attackSound.Count)].Play();
+    }
     
     private void _moveOnPosition(Vector3 hit)
     {
-		transform.LookAt(hit);
+        Vector3 difference = hit - transform.position; 
+        difference.Normalize();
+        float rotationY = Mathf.Atan2(difference.z, difference.x) * Mathf.Rad2Deg;
+        agent.transform.rotation = Quaternion.Euler(0f, -rotationY + 90, 0);
         agent.SetDestination(hit);
-        point.transform.position = hit;
     }
 
     public void cheatLevelUp()

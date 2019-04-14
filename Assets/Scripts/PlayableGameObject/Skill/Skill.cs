@@ -17,4 +17,9 @@ public class Skill : MonoBehaviour
     {
         return "null";
     }
+
+    public virtual string getInfoLevelNext()
+    {
+        return "null";
+    }
 }

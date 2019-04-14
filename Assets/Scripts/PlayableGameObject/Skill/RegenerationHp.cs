@@ -36,4 +36,16 @@ public class RegenerationHp : PassiveSkill
             oldTime = Time.time;
         }
     }
+
+    public override string getInfo()
+    {
+        return "Regen hp " + (GamaManager.gm.pc.maxHp * powerRegen).ToString() + " every " + coolDownTime + "seconds";
+    }
+
+    public override string getInfoLevelNext()
+    {
+        float tmpCoolDownTime = coolDownTime - (coolDownTime * 0.10f);
+
+        return "Regen hp " + (GamaManager.gm.pc.maxHp * powerRegen).ToString() + " every " + tmpCoolDownTime + "seconds";
+    }
 }

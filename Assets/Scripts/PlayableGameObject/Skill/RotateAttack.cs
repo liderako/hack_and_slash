@@ -64,9 +64,22 @@ public class RotateAttack : Skill
         {
             if (hitColliders[i].gameObject.tag.Equals("EnemyObject"))
             {
-                hitColliders[i].SendMessage("hit", damage * _aliveObject.GetComponent<PlayerController>().getDamage());
+                hitColliders[i].SendMessage("hit", damage + _aliveObject.GetComponent<PlayerController>().getDamage() * _aliveObject.level);
             }
             i++;
         }
+    }
+    
+    public override string getInfo()
+    {
+        return "Rotate attack damage " + (damage + GamaManager.gm.pc.minDamage * GamaManager.gm.pc.level) + "/" + (damage + GamaManager.gm.pc.maxDamage * GamaManager.gm.pc.level) + " CD " + coolDownTime + " seconds ";
+    }
+    
+    public override string getInfoLevelNext()
+    {
+        float tmpDamage = damage + (damage * 0.1f);
+        float coolDownTimeTmp = coolDownTime - (coolDownTime * 0.05f);
+            
+        return "Rotate attack damage " + (tmpDamage + GamaManager.gm.pc.minDamage * GamaManager.gm.pc.level) + "/" + (tmpDamage + GamaManager.gm.pc.maxDamage * GamaManager.gm.pc.level) + " CD " + coolDownTimeTmp + " seconds ";
     }
 }
