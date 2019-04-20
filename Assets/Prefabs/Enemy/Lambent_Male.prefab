@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!4 &6133653976500523460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4950018265548949525, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
+  m_PrefabInstance: {fileID: 1274204962515343825}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6133653976500523463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4950018265548949526, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
+  m_PrefabInstance: {fileID: 1274204962515343825}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98cbb224875447059479e8e2f2f5474, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5995943554059406225
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,13 +852,17 @@ MonoBehaviour:
   level: 1
   exp: 75
   credits: 0
+  isSpawn: 0
+  isDead: 0
+  isExp: 0
   _passiveSkills:
   - {fileID: 6133653976500523463}
   isPlayer: 0
   isAttack: 0
-  isSpawn: 0
-  isDead: 0
-  isExp: 0
+  weapons:
+  - {fileID: 6072525663837814667, guid: f567dbf02ece6e94cb2c5e7e7c826fad, type: 3}
+  - {fileID: 8655894517066485916, guid: b326812175740784b965aab7931cccb3, type: 3}
+  - {fileID: 1644438496860052123, guid: 486575561f5211241915bb4b051f87c2, type: 3}
   playerObject: {fileID: 0}
   player: {fileID: 0}
   playerController: {fileID: 0}
@@ -892,7 +912,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 50b2431c8b7e14a13ba716a90ee5c17d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.382
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2961,22 +2981,6 @@ Transform:
   m_Father: {fileID: 5995943554486586658}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &6133653976500523460 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4950018265548949525, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
-  m_PrefabInstance: {fileID: 1274204962515343825}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6133653976500523463 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4950018265548949526, guid: 5ab50bfc6d4ea446589ccd9b18929479, type: 3}
-  m_PrefabInstance: {fileID: 1274204962515343825}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f98cbb224875447059479e8e2f2f5474, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1274204962515343825
 PrefabInstance:
   m_ObjectHideFlags: 0

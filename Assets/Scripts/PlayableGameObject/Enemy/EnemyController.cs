@@ -8,7 +8,7 @@ public class EnemyController : AliveObject
 
     public bool isPlayer;
     public bool isAttack;
-    
+    public GameObject[] weapons;
     public GameObject playerObject;
     public GameObject player;
 	public PlayerController playerController;
@@ -174,6 +174,20 @@ public class EnemyController : AliveObject
         {
             Instantiate(loot, transform.position, Quaternion.identity);
         }
+        else if (Random.Range(0, 15) > 5)
+        {
+            GameObject weap = Instantiate(weapons[Random.Range(0, 3)], transform.position, Quaternion.identity);
+            weap.transform.localScale *= 7;
+            if ((int) weap.GetComponent<WeaponStats>().weaponType == 1)
+            {
+                Vector3 euler = weap.transform.eulerAngles;
+                euler.x += 90;
+                weap.transform.eulerAngles = euler;
+            }
+
+            weap.GetComponent<WeaponStats>().damage = Random.Range(10, 30);
+            weap.GetComponent<WeaponStats>().attackSpeed = Random.Range(0.3f, 0.8f);
+        }
     }
     
     private void rotateForAttack()
@@ -209,3 +223,4 @@ public class EnemyController : AliveObject
         checkDeadPoint = new Vector3(transform.position.x, transform.position.y - 0.15f, transform.position.z);
     }
 }
+

@@ -297,13 +297,17 @@ MonoBehaviour:
   level: 1
   exp: 200
   credits: 0
+  isSpawn: 0
+  isDead: 0
+  isExp: 0
   _passiveSkills:
   - {fileID: 5119059856480882571}
   isPlayer: 0
   isAttack: 0
-  isSpawn: 0
-  isDead: 0
-  isExp: 0
+  weapons:
+  - {fileID: 6072525663837814667, guid: f567dbf02ece6e94cb2c5e7e7c826fad, type: 3}
+  - {fileID: 8655894517066485916, guid: b326812175740784b965aab7931cccb3, type: 3}
+  - {fileID: 1644438496860052123, guid: 486575561f5211241915bb4b051f87c2, type: 3}
   playerObject: {fileID: 0}
   player: {fileID: 0}
   playerController: {fileID: 0}
@@ -353,7 +357,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f94b805e4ac4343b7ae2a4ff4e1ae4e4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.431
   m_Pitch: 0.33
   Loop: 0
   Mute: 0
