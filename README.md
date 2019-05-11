@@ -2,7 +2,7 @@
 ```
 We spent 4 days and 70 hours on it
 ```
-Features Unity that I studied
+Features Unity that I studied and use
 * 3D Animations
 * Terrain
 * Level-up system
