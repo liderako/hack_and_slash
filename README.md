@@ -11,7 +11,7 @@ Features Unity that I studied and use
 * Particle system
 * Hack and slash Control
 * level-design, do you see menu? It's nice and simple)
-* and many many other
+* and much more
 
 My friend make
 * Weapon system
